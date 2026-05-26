@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kichijoji Cafe 안내: 킬리쇼지에서 '제대로 된' 카페 찾는 법</title>
+    <meta name="description" content="당신이 Kichijoji에서 헤매고 있다면, 이 페이지가 정답입니다. 단순히 예쁜 곳만 나열하는 건 초보적인 접근이죠. 여기는 숨겨진 맛집부터 분위기까지 TMI로 꽉 채운 안내서니까 잘 보세요. ☕🔥">
+    <meta name="keywords" content="Kichijoji cafe, 키치조지 카페, 도쿄 카페, Kichijoji cafe 추천, 일본 카페, 킬리쇼지 커피, 현지인 맛집 카페, 키치조지 브루탈리즘">
+    <link rel="canonical" href="https://yourdomain.com/kichijoji-cafe-guide/"> <!-- 실제 도메인으로 변경해야 함 -->
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:title" content="Kichijoji Cafe 안내: 킬리쇼지에서 '제대로 된' 카페 찾는 법">
+    <meta property="og:description" content="당신이 Kichijoji에서 헤매고 있다면, 이 페이지가 정답입니다. 단순히 예쁜 곳만 나열하는 건 초보적인 접근이죠. 여기는 숨겨진 맛집부터 분위기까지 TMI로 꽉 채운 안내서니까 잘 보세요. ☕🔥">
+    <!-- 스타일 시트는 재사용을 위해 내부 스타일 블록에 포함한다고 가정합니다. -->
+    <style>
+        /* =========================================== */
+        /* [CSS CORE SYSTEM - REUSED FROM PREVIOUS PAGE] */
+        /* (이전 페이지와 동일한 디자인 시스템 클래스 및 변수 사용) */
+        /* =========================================== */
+        :root {
+            --color-primary: #FF4500; /* 강렬한 주황/레드 계열 */
+            --color-secondary: #36454F; /* 다크 차콜/브루탈리즘 톤 */
+            --color-background: #F7F7F7;
+            --color-surface: #FFFFFF;
+            --color-text-dark: #1A1A1A;
+            --color-accent-light: #E0B48D; /* 모래/벽돌 톤 */
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- LAYOUT & STRUCTURE --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        main {
+            padding: 50px 0;
+        }
+
+        /* --- NAVIGATION (NAV-PRESENT) --- */
+        nav.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 1.8em;
+            letter-spacing: -1px;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .nav-links li a:hover {
+            color: var(--color-primary);
+            background-color: rgba(255, 69, 0, 0.1);
+        }
+
+        /* --- HAMBURGER MENU (for mobile) --- */
+        .hamburger-menu {
+            display: none; /* 기본적으로는 보여주지만 모바일용 */
+            font-size: 1.8em;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* --- CONTENT ELEMENTS --- */
+        h1.page-title {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 40px;
+            color: var(--color-secondary);
+            border-bottom: 5px solid var(--color-primary);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .content-section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--color-primary);
+            border-left: 5px solid var(--color-accent-light);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* --- CARD STYLES (for featured spots) --- */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .cafe-card {
+            background-color: var(--color-surface);
+            border: 2px solid var(--color-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cafe-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 10px 15px 25px rgba(255, 69, 0, 0.4);
+        }
+
+        .card-header {
+            padding: 20px;
+            background-color: var(--color-secondary);
+            color: white;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--color-primary);
+        }
+
+        .card-tag {
+            display: inline-block;
+            background-color: var(--color-accent-light);
+            color: var(--color-secondary);
+            padding: 5px 12px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-right: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* --- TEL LINK (for direct contact) --- */
+        .tel-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--color-primary);
+            color: white !important; /* 링크 색상 강제 오버라이드 */
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 15px;
+            box-shadow: 0 4px 8px rgba(255, 69, 0, 0.4);
+        }
+
+        .tel-link:hover {
+            background-color: #e03d00; /* 조금 더 진한 오렌지 */
+            transform: translateY(-2px);
+        }
+
+        /* --- FAQ SECTION --- */
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: var(--color-secondary);
+            margin-bottom: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-answer {
+            padding-top: 5px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        /* =========================================== */
+        /* MEDIA QUERIES (MOBILE FIRST ADJUSTMENTS) */
+        /* =========================================== */
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none; /* 기본적으로 숨김 */
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 75px; /* 헤더 높이만큼 아래로 */
+                left: 0;
+                background-color: var(--color-secondary);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .nav-links.active {
+                display: flex; /* 활성화 시 표시 */
+            }
+
+            .nav-links li {
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .hamburger-menu {
+                display: block; /* 모바일에서는 햄버거 메뉴 표시 */
+            }
+        }
+
+        @media (max-width: 600px) {
+             .page-title {
+                font-size: 2.5em;
+                margin-bottom: 30px;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>KICHIGOJI GUIDE</h1>
+                </div>
+                <div class="hamburger-menu" id="hamburger">&#9728;</div> <!-- 햄버거 아이콘 -->
+                <div class="nav-links" id="navMenu">
+                    <ul>
+                        <li><a href="#">HOME (메인)</a></li>
+                        <li><a href="#">☕ CAFE SPOT</a></li>
+                        <li><a href="#">🍜 FOOD GUIDE</a></li>
+                        <li><a href="#">🗺️ AREA MAP</a></li>
+                        <li><a href="#">TMI / FAQ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 페이지 제목 -->
+        <h1 class="page-title">Kichijoji Cafe 안내: 제대로 된 곳만 골랐다</h1>
+
+        <!-- 🚀 도입부 - 브루탈/엣지 바이브 강조 -->
+        <section class="content-section introduction">
+            <p style="font-size: 1.2em; text-align: center; margin-bottom: 30px;"><strong>Listen up, Bro.</strong> Kichijoji에 왔다면, 그냥 '인스타 감성'만 보고 헤매지 마라. 여기는 예쁜 포토존을 넘어선 깊이가 있는 곳들로만 구성했다. 맛, 분위기, 현지인들의 숨겨진 시크릿까지 싹 다 까발려 줄 테니, 정신 똑바로 차리고 읽어라.</p>
+            <p style="text-align: center; font-style: italic;">이 가이드는 당신의 '카페 탐험' 수준을 한 단계 끌어올릴 것이다. 단순한 나열? 그딴 건 구시대적인 발상이다. 우리는 '선택과 집중', 즉 제대로 된 곳만 찔러 넣었다.</p>
+        </section>
+
+<!-- SEO Visual 2: 정보 Cardless Editorial List -->
+<div class="seo-visual-cards" role="img" aria-label="Kichijoji cafe 안내 정보 — 신뢰할 수 있는 서비스" 
+     style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">특화</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">Kichijoji cafe 안내</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">다수 실적</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">Kichijoji cafe 안내</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">고품질</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">Kichijoji cafe 안내</span>
+  </div>
+</div>
+
+        <!-- ☕ 메인 콘텐츠: 추천 카페 리스트 (Card Grid) -->
+        <section class="content-section featured-cafes">
+            <h2>🔥 Kichijoji's Undeniable Spots (핵심 추천지)</h2>
+            <div class="card-grid">
+
+                <!-- 카드 1: 브루탈/시크한 분위기 -->
+                <div class="cafe-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Concrete Grind Roastery</h3>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag" style="background-color: var(--color-primary); color: white;">#Brutalist</span>
+                        <span class="card-tag">#커피맛집</span>
+                        <span class="card-tag">#현지인픽</span>
+
+                        <p>시멘트 벽과 거친 질감 그 자체. 인테리어에 돈을 아끼지 않은 듯 보이지만, 오히려 그 투박함이 미쳤ᄃ다. 커피 맛은 뭐, 말해 뭐해? 산미와 바디감이 완벽한 밸런스. 여기서 인생샷 건지는 건 기본이다.</p>
+                        <div class="card-footer">
+                            <a href="tel:+8190XXXXXXXX" class="tel-link" onclick="window.location.href='tel:+8190XXXXXXXX'">📞 전화 문의</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 2: 숨겨진 맛집/아늑함 -->
+                <div class="cafe-card">
+                    <div class="card-header">
+                        <h3 class="card-title">The Alleyway Bloom</h3>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag" style="background-color: var(--color-accent-light);">#HiddenGem</span>
+                        <span class="card-tag">#디저트천국</span>
+                        <span class="card-tag">#힐링존</span>
+
+                        <p>큰 거리에서 살짝 비틀어 골목으로 들어가야 찾을 수 있는 곳. 작은 창문마다 식물이 가득해서 들어서는 순간 '와...' 소리가 절로 나옴. 시그니처 치즈케이크는 무조건 먹어야 함. 아늑함 그 자체.</p>
+                        <div class="card-footer">
+                            <a href="#" class="tel-link" style="background-color: #2E8B57;">🗺️ 길 찾기</a> <!-- 다른 액션으로 변경 -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 카드 3: 트렌디/시각적 충격 -->
+                <div class="cafe-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Neon Pulse Lab</h3>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag" style="background-color: var(--color-primary); color: white;">#Trendy</span>
+                        <span class="card-tag">#도파민폭발</span>
+                        <span class="card-tag">#시각적쾌감</span>
+
+                        <p>미래지향적인 네온사인과 콘크리트 구조의 조화. 사진 찍을 곳이 너무 많아서 뭘 골라야 할지 고민될 정도. 커피도 강렬한 플레이버로 승부함. 좀 시끄러울 수 있지만, 그게 매력이다.</p>
+                        <div class="card-footer">
+                            <a href="#" class="tel-link" style="background-color: var(--color-secondary);">⭐️ 리뷰 보기</a> <!-- 다른 액션으로 변경 -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- 💡 심층 분석 섹션 -->
+        <section class="content-section deep-dive">
+             <h2>🤔 왜 Kichijoji 카페는 '특별'한가? (브루탈리즘 & 라이프스타일)</h2>
+             <p style="text-align: justify; margin-bottom: 20px;">킬리쇼지라는 동네 자체가 주는 분위기가 다르다. 화려한 쇼핑몰의 인공미보다는, '거친 삶의 흔적'이 배어있다. 카페들이 그 브루탈리즘(Brutalism) 미학을 받아들여서, 밋밋한 디자인 대신 노출 콘크리트, 거친 벽돌 마감, 강렬한 색 대비를 사용하지. 이건 그냥 유행이 아니라 철학이다.</p>
+             <ul style="padding-left: 25px;">
+                <li><strong>Raw Aesthetics:</strong> 꾸미려 하지 않음. 재료 본연의 질감을 드러내는 것 자체가 디자인.</li>
+                <li><strong>Local Grit:</strong> 관광객을 위한 포장보다는, 동네 주민들의 일상에 녹아들어 있는 '진짜' 느낌이 강하다.</li>
+                <li><strong>Bold Flavor Profile:</strong> 커피 맛도 주저하지 않아. 은은한 향? 지루해. 확실하게 톡 쏘거나, 진득하거나 둘 중 하나다.</li>
+             </ul>
+        
+<div class="seo-visual-divider" role="separator" aria-label="Kichijoji cafe 안내 구분선" style="margin:32px 0;text-align:center;color:#e5e5e0;font-size:0.85rem;letter-spacing:0.5em">◆ ◆ ◆</div>
+</section>
+
+
+        <!-- ❓ FAQ 섹션 -->
+        <section class="content-section faq-corner">
+            <h2>❓ 자주 묻는 질문 (FAQ)</h2>
+
+            <div id="faqContainer">
+                <div class="faq-item">
+                    </body>
+</html>
