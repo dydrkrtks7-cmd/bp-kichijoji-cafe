@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[Kichijoji Kichijoji cafe 안내]]></title>
-  <link>https://</link>
-  <description><![CDATA[Kichijoji 정보 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Tue, 26 May 2026 15:25:00 GMT</pubDate>
-  <lastBuildDate>Tue, 26 May 2026 15:25:00 GMT</lastBuildDate>
-  <atom:link href="https:///feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[정보]]></title>
+  <link>https://dydrkrtks7-cmd.github.io/bp-kichijoji-cafe</link>
+  <description><![CDATA[정보 - Kichijoji cafe 안내 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Tue, 09 Jun 2026 23:43:44 GMT</pubDate>
+  <lastBuildDate>Tue, 09 Jun 2026 23:43:44 GMT</lastBuildDate>
+  <atom:link href="https://dydrkrtks7-cmd.github.io/bp-kichijoji-cafe/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[Kichijoji Kichijoji cafe 안내 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https:///</link>
-      <guid isPermaLink="true">https:///</guid>
-      <description><![CDATA[Kichijoji 정보 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Tue, 26 May 2026 15:25:00 GMT</pubDate>
+      <title><![CDATA[정보 해결 방법 총정리 — 전문가가 알려주는 5가지 팁]]></title>
+      <link>https://dydrkrtks7-cmd.github.io/bp-kichijoji-cafe/posts/guide-001-7vbmww.html</link>
+      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-kichijoji-cafe/posts/guide-001-7vbmww.html</guid>
+      <description><![CDATA[### 구체적 니치 콘텐츠 작성 주어진 주제를 일반론으로 요약하지 말고, 독자가 실제로 판단하거나 행동하는 데 필요한 구체적인 맥락을 작성하세요. #### 주제: 테라포밍 마스의 비너스 확장이 특정 2인 전략 게임 밸런스를 완전히 무너뜨리는 수치 분석 ##### 맥락보]]></description>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
